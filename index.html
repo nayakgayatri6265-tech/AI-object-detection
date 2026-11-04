@@ -208,12 +208,10 @@ async function detectObjects() {
             const confidence =
                 (prediction.score * 100).toFixed(1);
 
-            // Draw bounding box
             ctx.strokeStyle = "#00ff88";
             ctx.lineWidth = 3;
             ctx.strokeRect(x, y, width, height);
 
-            // Draw object label
             ctx.fillStyle = "#00ff88";
             ctx.font = "bold 16px Arial";
 
